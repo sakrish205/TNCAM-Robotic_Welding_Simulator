@@ -1,4 +1,72 @@
-# Robotic-Welding-Arm
-This report presents the development and simulation of a robotic welder using Coppelia Sim software and Python programming language. The system is capable of detecting welding joints through a vision sensor, executing motion and path planning, completing the welding pass, and retracting to a safe home position. The implementation of this project utilizes Python image processing to detect the welding joints accurately. The simulation results show that the system can accurately perform the required tasks and ensure safety. The developed robotic welder provides an efficient and effective solution for welding joints on parts in industrial applications.
+# TNCAM-Robotic_Welding_Simulator
 
-[Visit the project wiki for more details](https://github.com/JeewanthaUdeshika/Robotic-Welding-Arm/wiki)
+![Project Banner](https://img.shields.io/badge/Robotics-Welding-blue)
+![Python](https://img.shields.io/badge/Python-3.8+-green)
+![CoppeliaSim](https://img.shields.io/badge/CoppeliaSim-Edu-orange)
+
+**TNCAM (The New Computer-Aided Manufacturing)** is a professional-grade robotic welding simulation environment built on top of **CoppeliaSim** (formerly V-REP). It provides a comprehensive suite for path designing, motion control, and safety monitoring of industrial welding robots.
+
+## 🚀 Features
+
+- **Interactive GUI**: A user-friendly Tkinter-based control panel.
+- **Precision Path Designer**: Create and edit weld paths in real-time.
+- **Advanced Kinematics**: Integrated Inverse Kinematics (IK) solver for smooth 6-DOF robot motion.
+- **Safety Controller**: Real-time collision detection and obstacle avoidance.
+- **Data Logging**: Comprehensive logging of joint states, tool positions, and welding KPIs.
+- **CoppeliaSim Integration**: Seamless remote API communication for physics-based simulation.
+
+## 🛠️ Prerequisites
+
+- **CoppeliaSim**: Recommended version 4.1+ (Edu or Player).
+- **Python 3.8+**: With `numpy`, `opencv-python`, and `tkinter`.
+
+## 📦 Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sakrish205/TNCAM-Robotic_Welding_Simulator.git
+   cd TNCAM-Robotic_Welding_Simulator
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **CoppeliaSim Setup**:
+   - Open your welding scene in CoppeliaSim.
+   - Ensure the Remote API server is running on port **19997**.
+
+## 🚦 Usage
+
+1. **Launch the Simulation**:
+   ```bash
+   python run_simulation.py
+   ```
+
+2. **Connect**: Click the **Connect** button in the GUI to establish communication with CoppeliaSim.
+3. **Load Path**: Use the **Load CSV** or **Path Designer** to define the welding trajectory.
+4. **Execute**: Click **Execute Path** to begin the welding process.
+
+## 📂 Project Structure
+
+- `run_simulation.py`: Main entry point and GUI.
+- `requirements.txt`: Project dependencies.
+- `.gitignore`: Git exclusion rules.
+- `LICENSE`: MIT License file.
+- `src/`: Core logic modules (IK, Control, Safety, Logging).
+- `data/`: Input paths and output logs.
+- `assets/`: 3D models and meshes.
+- `docs/`: Technical documentation and architecture diagrams.
+- `markdown/`: Comprehensive project reports.
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+*Developed by the TNCAM Team.*

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ruff_cache/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# CoppeliaSim
+remoteApi.dll
+remoteApi.so
+remoteApi.dylib
+v_rep.dll
+v_rep.so
+v_rep.dylib
+
+# OS/System
+*.lnk
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+data/output/
+data/input/weld_path.csv
+welding_log_*.csv
+*_kpis.txt
+archive/
+ppt/
+markdown/
+docs/
+*.md
+!README.md
+!LICENSE
+# Note: assets/ and meshes/ are required for simulation.
+!assets/
+!meshes/

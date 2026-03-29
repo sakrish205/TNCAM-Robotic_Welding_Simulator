@@ -1,0 +1,38 @@
+# Cube OBJ file
+# Dimensions: 0.15m x 0.15m x 0.15m
+# Created for CoppeliaSim welding workpiece
+
+# 8 vertices of cube
+v -0.075 0.0 0.075
+v 0.075 0.0 0.075
+v 0.075 0.15 0.075
+v -0.075 0.15 0.075
+
+v -0.075 0.0 -0.075
+v 0.075 0.0 -0.075
+v 0.075 0.15 -0.075
+v -0.075 0.15 -0.075
+
+# Top face
+f 1 2 3
+f 1 3 4
+
+# Bottom face
+f 5 7 6
+f 5 8 7
+
+# Front face
+f 1 6 2
+f 1 5 6
+
+# Back face
+f 3 7 8
+f 3 8 4
+
+# Left face
+f 1 4 8
+f 1 8 5
+
+# Right face
+f 2 6 7
+f 2 7 3
