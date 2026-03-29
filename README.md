@@ -57,8 +57,6 @@
 - `src/`: Core logic modules (IK, Control, Safety, Logging).
 - `data/`: Input paths and output logs.
 - `assets/`: 3D models and meshes.
-- `docs/`: Technical documentation and architecture diagrams.
-- `markdown/`: Comprehensive project reports.
 
 ## 📜 License
 
